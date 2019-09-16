@@ -10,6 +10,26 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Conversor de moedas',
       theme: ThemeData(
+        inputDecorationTheme: InputDecorationTheme(
+          border: InputBorder.none,
+          fillColor: Colors.black54,
+          filled: true,
+          labelStyle: TextStyle(
+            fontSize: 18,
+            color: Colors.white54,
+          ),
+          prefixStyle: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.w500,
+            color: Colors.white,
+          ),
+        ),
+        textTheme: TextTheme(
+          subhead: TextStyle(
+            fontSize: 22,
+            color: Colors.white,
+          ),
+        ),
         primaryColor: Colors.purple[500],
         accentColor: Colors.white,
       ),
